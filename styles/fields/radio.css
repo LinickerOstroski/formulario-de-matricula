@@ -7,8 +7,6 @@ label+.radio-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   gap: 1rem;
-
-
 }
 
 .radio-inner {
@@ -16,12 +14,11 @@ label+.radio-wrapper {
   border: 1px solid var(--stroke-default);
   border-radius: .5rem;
 
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   gap: .5rem;
-
   padding: 2rem .5rem .5rem;
-
   position: relative;
 
   & input,
@@ -51,8 +48,6 @@ label+.radio-wrapper {
     & .radio-image input {
       background-image: url(../../assets/icons/radio-hover.svg);
     }
-
-
   }
 
   &:has(:checked) {
